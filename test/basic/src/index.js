@@ -1,1 +1,5 @@
-window.test = 1;
+import styled from 'styled-components';
+
+window.test = styled.div`
+  color: red;
+`;

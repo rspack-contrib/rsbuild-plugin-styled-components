@@ -1,44 +1,39 @@
-import { dirname } from 'node:path';
+import { readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { expect, test } from '@playwright/test';
 import { createRsbuild } from '@rsbuild/core';
-import { pluginStyledComponents } from '../../src';
-import { getRandomPort } from '../helper';
+import { pluginStyledComponents } from '../../dist';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-test('should render page as expected', async ({ page }) => {
+test('should transform styled-components with pluginStyledComponents', async ({
+  page,
+}) => {
   const rsbuild = await createRsbuild({
     cwd: __dirname,
     rsbuildConfig: {
       plugins: [pluginStyledComponents()],
-      server: {
-        port: getRandomPort(),
+      output: {
+        minify: false,
+        filenameHash: false,
       },
     },
   });
 
-  const { server, urls } = await rsbuild.startDevServer();
-
-  await page.goto(urls[0]);
-  expect(await page.evaluate('window.test')).toBe(1);
-
-  await server.close();
-});
-
-test('should build succeed', async ({ page }) => {
-  const rsbuild = await createRsbuild({
-    cwd: __dirname,
-    rsbuildConfig: {
-      plugins: [pluginStyledComponents()],
-    },
-  });
-
   await rsbuild.build();
+
+  const indexJs = readFileSync(
+    join(rsbuild.context.distPath, 'static/js/index.js'),
+    'utf-8',
+  );
+
+  expect(indexJs).toContain('div.withConfig');
+
   const { server, urls } = await rsbuild.preview();
 
   await page.goto(urls[0]);
-  expect(await page.evaluate('window.test')).toBe(1);
+  expect(await page.evaluate('typeof window.test')).toBe('object');
 
   await server.close();
 });

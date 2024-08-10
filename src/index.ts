@@ -1,3 +1,4 @@
+import { createRequire } from 'node:module';
 import type {
   MergedEnvironmentConfig,
   RsbuildConfig,
@@ -5,6 +6,8 @@ import type {
   RsbuildTarget,
 } from '@rsbuild/core';
 import { type ConfigChain, reduceConfigs } from 'reduce-configs';
+
+const require = createRequire(import.meta.url);
 
 /**
  * The options of [@swc/plugin-styled-components](https://www.npmjs.com/package/@swc/plugin-styled-components).
