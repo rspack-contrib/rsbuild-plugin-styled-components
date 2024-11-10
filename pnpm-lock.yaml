@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@swc/plugin-styled-components':
-        specifier: 2.0.12
-        version: 2.0.12
+        specifier: 5.0.0
+        version: 5.0.0
       reduce-configs:
         specifier: ^1.0.0
         version: 1.0.0
@@ -459,8 +459,8 @@ packages:
   '@swc/helpers@0.5.13':
     resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
 
-  '@swc/plugin-styled-components@2.0.12':
-    resolution: {integrity: sha512-ZlA2T++rRRH734gt3+/FGfQc/oIWVQ69xl+FbeWQflB8YYG30/ADCqDOJ90XXo21hk3FZ0sMilXfaqqFUvYy0g==}
+  '@swc/plugin-styled-components@5.0.0':
+    resolution: {integrity: sha512-c9WCV2hU4OxfczzeABNFwkLftAovP7IeHPX0nxqu1HMn4x/T6MjWoJ22hspBv32NpUwGlvIgRG3SyHRHE80enw==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -1195,7 +1195,7 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  '@swc/plugin-styled-components@2.0.12':
+  '@swc/plugin-styled-components@5.0.0':
     dependencies:
       '@swc/counter': 0.1.3
 
