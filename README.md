@@ -16,7 +16,11 @@ An Rsbuild plugin to provide compile-time support for styled-components. It impr
 Install:
 
 ```bash
+# `@rsbuild/core` >= 1.2.0
 npm add @rsbuild/plugin-styled-components -D
+
+# `@rsbuild/core` < 1.2.0
+npm add @rsbuild/plugin-styled-components@1.1.0 -D
 ```
 
 Add plugin to your `rsbuild.config.ts`:
