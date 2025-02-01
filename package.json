@@ -33,20 +33,20 @@
     ]
   },
   "dependencies": {
-    "@swc/plugin-styled-components": "^6.0.2",
+    "@swc/plugin-styled-components": "^6.7.0",
     "reduce-configs": "^1.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@playwright/test": "^1.49.0",
-    "@rsbuild/core": "^1.2.0-alpha.0",
-    "@rslib/core": "^0.1.1",
-    "@types/node": "^22.10.1",
+    "@playwright/test": "^1.50.1",
+    "@rsbuild/core": "^1.2.3",
+    "@rslib/core": "^0.4.0",
+    "@types/node": "^22.13.0",
     "nano-staged": "^0.8.0",
-    "playwright": "^1.49.0",
+    "playwright": "^1.50.1",
     "simple-git-hooks": "^2.11.1",
-    "styled-components": "^6.1.13",
-    "typescript": "^5.7.2"
+    "styled-components": "^6.1.14",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "@rsbuild/core": "^1.2.0"
@@ -56,7 +56,7 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@9.14.4",
+  "packageManager": "pnpm@9.15.4",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/",
