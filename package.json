@@ -1,6 +1,6 @@
 {
   "name": "@rsbuild/plugin-styled-components",
-  "version": "1.2.1",
+  "version": "1.2.2-beta.0",
   "repository": "https://github.com/rspack-contrib/rsbuild-plugin-styled-components",
   "license": "MIT",
   "type": "module",
@@ -33,7 +33,7 @@
     ]
   },
   "dependencies": {
-    "@swc/plugin-styled-components": "^6.8.2",
+    "@swc/plugin-styled-components": "6.7.0",
     "reduce-configs": "^1.1.0"
   },
   "devDependencies": {
