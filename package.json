@@ -33,7 +33,7 @@
     ]
   },
   "dependencies": {
-    "@swc/plugin-styled-components": "^6.7.0",
+    "@swc/plugin-styled-components": "^6.8.2",
     "reduce-configs": "^1.1.0"
   },
   "devDependencies": {
