@@ -22,8 +22,11 @@ If you have any requirements, it is recommended to file an issue to [SWC plugins
 Install:
 
 ```bash
-# `@rsbuild/core` >= 1.4.0
+# `@rsbuild/core` >= 1.6.0
 npm add @rsbuild/plugin-styled-components -D
+
+# `@rsbuild/core` 1.4.x ~ 1.5.x
+npm add @rsbuild/plugin-styled-components@1.4.1 -D
 
 # `@rsbuild/core` 1.2.x ~ 1.3.x
 npm add @rsbuild/plugin-styled-components@1.3.0 -D
