@@ -79,7 +79,7 @@ type StyledComponentsOptions = {
   transpileTemplateLiterals?: boolean;
   minify?: boolean;
   pure?: boolean;
-  cssProps?: boolean;
+  cssProp?: boolean;
 };
 ```
 

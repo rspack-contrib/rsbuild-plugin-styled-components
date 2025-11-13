@@ -22,7 +22,7 @@ export type PluginStyledComponentsOptions = {
   transpileTemplateLiterals?: boolean;
   minify?: boolean;
   pure?: boolean;
-  cssProps?: boolean;
+  cssProp?: boolean;
 };
 
 function isServerTarget(target: RsbuildTarget[]) {
