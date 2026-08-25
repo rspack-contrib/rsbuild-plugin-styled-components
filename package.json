@@ -1,6 +1,6 @@
 {
   "name": "@rsbuild/plugin-styled-components",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "repository": "https://github.com/rstackjs/rsbuild-plugin-styled-components",
   "homepage": "https://github.com/rstackjs/rsbuild-plugin-styled-components#readme",
   "bugs": {
