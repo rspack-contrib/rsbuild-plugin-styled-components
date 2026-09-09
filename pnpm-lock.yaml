@@ -12,8 +12,8 @@ importers:
         specifier: ^13.0.0
         version: 13.0.0
       reduce-configs:
-        specifier: ^1.1.2
-        version: 1.1.2
+        specifier: ^2.0.1
+        version: 2.0.1
     devDependencies:
       '@rsbuild/core':
         specifier: ^2.2.2
@@ -648,8 +648,8 @@ packages:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
-  reduce-configs@1.1.2:
-    resolution: {integrity: sha512-AgBP55V8FC7NaqoOP2RCbTpu6LE+YuX3LUZkNAoitcfyS3/PIC8Obg/TJrBzTkJ+lDvZv0TTAeDpLkzjTtYlbw==}
+  reduce-configs@2.0.1:
+    resolution: {integrity: sha512-H9KTCWTEb1YM1OoOz0f6TeGZYlW82sIT1viNg3W8CjjY0pD3WI4MHs8GifKt5FKTVIfHh/DenfJqqY+FP9jF2A==}
 
   rsbuild-plugin-dts@1.0.0-rc.2:
     resolution: {integrity: sha512-Mqalmu3j7UcDLUl3O5Y502V5Id6cbKyNn/nUxQIxar7gK2KjdPyw58WRfMQ7/4r4oHmeBeIgeSCb50M648ysoA==}
@@ -1112,7 +1112,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  reduce-configs@1.1.2: {}
+  reduce-configs@2.0.1: {}
 
   rsbuild-plugin-dts@1.0.0-rc.2(@rsbuild/core@2.2.2)(typescript@7.0.2):
     dependencies:
